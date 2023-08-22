@@ -1,3 +1,6 @@
+* {
+    -border: 1px red solid;
+}
 body, html{
     margin: 0;
     border: 0;
@@ -38,17 +41,54 @@ header{
     color: white;
     text-decoration: none;
 }
+#menu-list{
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+#menu-list.open{
+    visibility: none;
+}
+#menu-button{
+    visibility: hidden;
+}
 @media (max-width: 550px){
     .div-menu{
         visibility: hidden;
+        -border: 1px red solid;
+        width: 0PX;
+        margin: 0px;
     }
     .menu{
         visibility: hidden;
+        width: 0px;
+        margin: 0px;
     }
     .li-menu{
         visibility: hidden;
+        margin: 0px;
     }
     .a-menu{
         visibility: hidden;
+        font-size: 0px;
+    }
+    #menu-list {
+        display: none; 
+        visibility: visible;
+        width: 100px;
+        height: 100px;
+    }
+      
+    #menu-list.open {
+        display: block; 
+        visibility: visible;
+    }
+    #menu-button{
+        margin: 20px 50px;
+        visibility: visible;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 20px;
     }
 }
