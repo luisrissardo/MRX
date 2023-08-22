@@ -16,7 +16,7 @@ header{
     display: flex;
     position: absolute;
     box-shadow: 0px 2px 5px powderblue;
-    -width: 100%;
+    width: 100%;
     background-color: rgb(57, 57, 57);
     -align-items: center;
 }
