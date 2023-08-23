@@ -77,18 +77,32 @@ header{
         visibility: visible;
         width: 100px;
         height: 100px;
+        margin: 0px;
     }
       
     #menu-list.open {
-        display: block; 
+        display: flex; 
         visibility: visible;
+        margin-top: 17px;
+        margin-left: -30px;
+        list-style: none;
+        height: 20px;
+    }
+    #menu-list.open li{
+        margin-left: 10px;
+    }
+    #menu-list.open a{
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
     }
     #menu-button{
-        margin: 20px 50px;
+        margin: 20px 10px;
         visibility: visible;
         background-color: transparent;
         border: none;
         color: white;
-        font-size: 20px;
+        font-size: 12px;
+        max-height: 20px;
     }
 }
