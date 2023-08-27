@@ -123,10 +123,12 @@ header{
     .li-menu{
         visibility: hidden;
         margin: 0px;
+        transition: 0s;
     }
-    .a-menu{
+    .a-menu, .a-menupc, .a-menups, .a-menuxb, .a-menunt{
         visibility: hidden;
         font-size: 0px;
+        transition: 0s;
     }
     #menu-list {
         display: none; 
@@ -145,12 +147,12 @@ header{
         height: 20px;
     }
     #menu-list.open li{
-        margin-left: 7px;
+        margin-left: 15px;
     }
     #menu-list.open a{
         color: white;
         text-decoration: none;
-        font-size: 7px;        
+        font-size: 10px;        
     }
     #menu-button{
         margin: 20px 10px;
