@@ -16,27 +16,68 @@ body, html{
     color: white;
     height: 120vh;
 }
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 12px;          
 }
   
-body::-webkit-scrollbar-track {
-    background: white;        
+::-webkit-scrollbar-track {
+    background: transparent;        
 }
   
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     border-radius: 20px;       
     border: 3px solid;
     width: 1px;
+    background-color: white;
+}
+.inicio_home{
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+}
+.big_title{
+    margin-top: 70px;
+    margin-bottom: 0px;
+    padding-top: 300px;
+    font-size: 80px;
+    text-shadow: 5px 5px 0px black;
+}
+.slogan{
+    text-shadow: 3px 3px 5px black;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    
+}
+.razerbtnacess{
+    border: 1px white solid;
+    padding: 13px 30px;
+    background-color: transparent;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px black;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+.razerbtnacess:hover{
+    border-radius: 20px;
     background-color: black;
+    border-color: black;
 }
 header{
     display: flex;
     position: fixed;
-    box-shadow: 0px 2px 0px rgb(140, 0, 255);
+    box-shadow: 0px 2px 0px #01F5B2;
     width: 100%;
-    background-color: rgb(57, 57, 57);
-    -align-items: center;
+    background-color: black;
+    transition: 0.3s;
+}
+header:hover{
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0px 2px 0px red;
 }
 .div-menu{
     margin-left: 285px;
@@ -58,7 +99,7 @@ header{
     transition: 0.3s;
 }
 .a-menu:hover{
-    color: rgb(140, 0, 255);
+    color: #01F5B2;
 }
 .a-menupc{
     font-size: 15px;
@@ -88,13 +129,13 @@ header{
     transition: 0.3s;
 }
 .a-menups:hover{
-    color: blue;
+    color: #0098F5;
 }
 .a-menuxb:hover{
     color: greenyellow;
 }
 .a-menunt:hover{
-    color: red;
+    color: rgb(255, 107, 107);
 }
 #menu-list{
     width: 0px;
@@ -108,12 +149,44 @@ header{
     visibility: hidden;
 }
 @media (max-width: 550px){
+    .inicio_home{
+        background-image: url(img/01med.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        text-align: center;
+        height: 100vh;
+        align-items: center;
+    }
+    .big_title{
+        margin-top: 60px;
+        font-size: 50px;
+    }
+    .slogan{
+        margin-top: 30px;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;        
+    }
+    ::-webkit-scrollbar {
+        visibility: hidden;
+        width: 0;
+    }
     .div-menu{
         visibility: hidden;
         -border: 1px red solid;
         width: 0PX;
         margin: 0px;
         max-width: 0%;
+    }
+    .razerbtnacess{
+        border: 1px white solid;
+        padding: 13px 30px;
+        background-color: transparent;
+        text-decoration: none;
+        text-shadow: 3px 3px 5px black;
+        margin-left: 0px;
+        transition: 0.3s;
     }
     .menu{
         visibility: hidden;
@@ -172,7 +245,14 @@ header{
     .li-menu{
       margin-left: 33px;
     }
-    .a-menu{
-        
+    .slogan{
+        text-shadow: 3px 3px 5px black;
+        margin-top: 50px;
+        padding-bottom: 30px;
+        font-size: 22px;   
     }
+    ::-webkit-scrollbar {
+        width: 0;          
+    }
+    
 }
